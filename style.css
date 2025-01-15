@@ -1,0 +1,90 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2e3b2f; /* Dark green background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.left, .right {
+  width: 48%;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+
+.certifications-experience {
+  display: flex;
+  justify-content: space-between;
+}
+
+.certifications, .experience {
+  width: 48%;
+}
+
+.certifications img {
+  width: 50px;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #555;
+}
+
