@@ -1,162 +1,120 @@
 /* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #013220; /* Dark Green */
-    color: #fff;
-    line-height: 1.6;
+    background-color: #013220; /* Dark green background */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
     text-align: center;
 }
 
-a {
-    text-decoration: none;
-}
-
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    align-items: center;
-}
-
+/* Container for Header */
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px;
 }
 
+/* Left Section (Profile) */
 .profile-left {
     flex: 1;
+    max-width: 300px;
     text-align: center;
-    padding-right: 20px;
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    object-fit: cover;
     margin-bottom: 20px;
-    border: 4px solid #fff;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2em;
+    margin: 0;
 }
 
 .job-title {
-    font-size: 1.2rem;
-    color: #00ffcc;
+    font-size: 1.2em;
+    color: #00ffcc; /* Accent color */
     margin-bottom: 20px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .social-icon {
-    font-size: 2rem;
-    color: #fff;
-    transition: transform 0.3s ease;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s;
 }
 
 .social-icon:hover {
     transform: scale(1.2);
 }
 
-/* Right Section */
+/* Right Section (About Me and Info) */
 .profile-right {
     flex: 2;
-    padding-left: 20px;
+    max-width: 600px;
+    margin-left: 20px;
 }
 
-.about {
-    background-color: #024d26;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+h2 {
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-.about h2 {
-    color: #00ffcc;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-.download-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00ffcc;
-    color: #013220;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.download-btn:hover {
-    background-color: #009e7d;
-}
-
-.certifications-experience {
+.info-container {
     display: flex;
     justify-content: space-between;
 }
 
 .column {
     flex: 1;
-    background-color: #024d26;
-    padding: 20px;
     margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
-.column h3 {
-    color: #00ffcc;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.download-cv {
+    display: inline-block;
+    background-color: #00ffcc;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.column p {
-    font-size: 1.1rem;
-    color: #fff;
-}
-
-.emoji {
-    font-size: 1.5rem;
-    margin-right: 10px;
+.download-cv:hover {
+    background-color: #009999;
 }
 
 /* Footer */
 footer {
+    margin-top: 20px;
     background-color: #013220;
-    padding: 20px;
-    color: #fff;
-    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    color: white;
     text-align: center;
 }
 
-footer a {
-    color: #00ffcc;
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: #fff;
+footer p {
+    margin: 0;
 }
 
